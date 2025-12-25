@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projectdocs — Lost in Tra(i)nslation — Week 5</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class="min-h-screen text-black
+bg-gradient-to-b
+from-[#1c1a12]
+via-[#2a2516]
+to-[#1c1a12]">
+
+  <!-- Background glow blobs -->
+  <div class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-amber-300/25 blur-3xl"></div>
+    <div class="absolute top-40 -right-20 h-72 w-72 rounded-full bg-emerald-300/20 blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-stone-200/15 blur-3xl"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-white/15 bg-white/5 backdrop-blur">
+    <div class="mx-auto max-w-6xl px-4 py-5 flex items-center justify-between">
+
+      <a href="index.html" class="group inline-flex items-center gap-3">
+        <span
+          class="inline-flex h-10 w-10 items-center justify-center rounded-2xl
+                 bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100
+                 text-black font-bold
+                 shadow-md shadow-emerald-300/30
+                 hover:from-emerald-300 hover:via-lime-200 hover:to-emerald-200
+                 hover:shadow-lg hover:shadow-emerald-300/50
+                 transition-all duration-300">
+          ✦
+        </span>
+
+        <div>
+          <h1 class="text-sm sm:text-base font-bold tracking-tight text-white">
+            Projectdocs — <span class="text-white/80">Lost in Tra(i)nslation</span>
+          </h1>
+          <p class="text-xs text-white/60">Week 5 • Reflectie • Beslissingen</p>
+        </div>
+      </a>
+
+      <a href="index.html"
+         class="rounded-full px-5 py-2 text-sm font-semibold text-black
+                bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100
+                hover:from-emerald-300 hover:via-lime-200 hover:to-emerald-200
+                hover:shadow-lg hover:shadow-emerald-300/40
+                transition-all duration-300">
+        ← Terug naar Home
+      </a>
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <main class="mx-auto max-w-6xl px-4 py-10">
+    <div class="grid gap-6 lg:grid-cols-[260px_1fr]">
+
+      <!-- Sidebar -->
+      <aside class="lg:sticky lg:top-24 h-fit">
+        <nav aria-label="Hoofdnavigatie"
+             class="rounded-3xl border border-white/15 bg-white/5 backdrop-blur p-5 shadow-[0_30px_100px_rgba(0,0,0,0.35)]">
+          <p class="text-xs font-semibold text-white/60 mb-3">Navigatie</p>
+
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Home</a></li>
+            <li><a href="Week1.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Week 1</a></li>
+            <li><a href="Week2.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Week 2</a></li>
+            <li><a href="Week3.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Week 3</a></li>
+            <li><a href="Week4.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Week 4</a></li>
+
+            <!-- Active -->
+            <li>
+              <a href="Week5.html"
+                 class="block rounded-2xl px-3 py-2 font-semibold text-black
+                        bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100
+                        shadow-lg shadow-emerald-300/40">
+                Week 5 ✦
+              </a>
+            </li>
+
+            <li><a href="Week6.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Week 6</a></li>
+            <li><a href="Week7.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Week 7</a></li>
+            <li><a href="Week8.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Week 8</a></li>
+            <li><a href="Week9.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Week 9</a></li>
+            <li><a href="Week10.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Week 10</a></li>
+            <li><a href="Week11.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Week 11</a></li>
+            <li><a href="Week12.html" class="block rounded-2xl px-3 py-2 font-medium text-white/80 bg-white/5 border border-white/10 hover:bg-white/10 hover:text-white transition">Week 12</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Content -->
+      <section class="rounded-3xl border border-white/15 bg-white/5 backdrop-blur p-7 sm:p-10 shadow-[0_30px_100px_rgba(0,0,0,0.45)]">
+        <header class="text-center">
+          <p class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1 text-xs text-white/70">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            Week 5 • Reflectie & Beslissingen
+          </p>
+
+          <h2 class="mt-4 text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+            Week 5:
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100">
+              Reflectie &amp; Beslissingen
+            </span>
+          </h2>
+
+          <p class="mt-2 text-sm text-white/60">Van Figma naar HTML &amp; CSS.</p>
+        </header>
+
+        <div class="mt-8 mb-8 h-1 w-16 rounded-full bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100"></div>
+
+        <article class="space-y-8 text-[15px] sm:text-base leading-relaxed text-white/80">
+
+          <section>
+            <h3 class="text-lg sm:text-xl font-semibold text-white">Doelen</h3>
+            <p>
+              Het doel van deze week was om mijn ontwerp uit Figma om te zetten naar HTML en CSS.
+              Ik wilde de basisstructuur van de website opbouwen, werken met containers
+              en mijn gekozen kleuren en lettertypes toepassen in de code.
+              Daarnaast wilde ik leren hoe ik mijn project online kan zetten via GitHub en Netlify.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-lg sm:text-xl font-semibold text-white">Wat heb ik gedaan?</h3>
+            <ul class="space-y-2">
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>De HTML-structuur opgezet met verschillende pagina’s per week.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Een navigatiebalk toegevoegd zodat alle weken verbonden zijn.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Lettertypes uit Figma geïmporteerd via Google Fonts.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Een achtergrondkleur en basisopmaak toegevoegd.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Het project gepubliceerd via GitHub en Netlify.</span></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="text-lg sm:text-xl font-semibold text-white">Redenen voor mijn keuzes</h3>
+            <p>
+              Ik koos voor een rustig en overzichtelijk ontwerp met voldoende witruimte,
+              in lijn met mijn Figma-ontwerp. De gele accentkleur zorgt voor consistentie
+              tussen design en code.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-lg sm:text-xl font-semibold text-white">Lessen &amp; Next steps</h3>
+            <p>
+              Ik leerde hoe belangrijk een duidelijke HTML-structuur is.
+              Volgende week wil ik experimenteren met lay-out, grid en spacing
+              zodat de website nog professioneler oogt.
+            </p>
+          </section>
+
+          <p class="pt-4 text-center text-xs text-white/60">
+            © Week 5 — Ibtisam Bellaali — Projectdocs Lost in Tra(i)nslation.
+          </p>
+        </article>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="mt-14 border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-4 py-10 text-center text-sm text-white/60">
+      © Ibtisam Bellaali — Groep 1GDM1 • Lost in Tra(i)nslation —
+<a href="https://github.com/USERNAME/REPO"
+   class="text-emerald-300 hover:text-emerald-200 underline-offset-4 hover:underline transition">
+  GitHub
+</a>
+    </div>
+  </footer>
+
+</body>
+</html>

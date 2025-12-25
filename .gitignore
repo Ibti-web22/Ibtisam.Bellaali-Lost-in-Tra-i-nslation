@@ -1,0 +1,14 @@
+# Logs
+*.log
+
+# Dependencies
+node_modules/
+venv/
+
+# Build output
+#git add .gitignoredist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
