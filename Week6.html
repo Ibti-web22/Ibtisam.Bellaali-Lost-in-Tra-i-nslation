@@ -14,11 +14,7 @@
   <link rel="stylesheet" href="dist/output.css">
 </head>
 
-<body class="min-h-screen text-black
-bg-gradient-to-b
-from-[#1c1a12]
-via-[#2a2516]
-to-[#1c1a12]">
+<body class="min-h-screen text-black bg-gradient-to-b from-[#1c1a12] via-[#2a2516] to-[#1c1a12]">
 
   <!-- Background glow blobs -->
   <div class="pointer-events-none fixed inset-0 -z-10">
@@ -47,7 +43,7 @@ to-[#1c1a12]">
           <h1 class="text-sm sm:text-base font-bold tracking-tight text-white">
             Projectdocs — <span class="text-white/80">Lost in Tra(i)nslation</span>
           </h1>
-          <p class="text-xs text-white/60">Week 6 • Reflectie • Beslissingen</p>
+          <p class="text-xs text-white/60">Week 6 • Designprincipes • Tailwind CSS</p>
         </div>
       </a>
 
@@ -105,24 +101,24 @@ to-[#1c1a12]">
         <header class="text-center">
           <p class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1 text-xs text-white/70">
             <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-            Week 6 • Reflectie & Beslissingen
+            Week 6 • Ibtisam Bellaali — Groep 1GDM1
           </p>
 
           <h2 class="mt-4 text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
             Week 6:
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100">
-              Reflectie &amp; Beslissingen
+              Designprincipes &amp; Tailwind CSS
             </span>
           </h2>
 
-          <p class="mt-2 text-sm text-white/60">Designprincipes &amp; werken met Tailwind CSS.</p>
+          <p class="mt-2 text-sm text-white/60">Rust, hiërarchie en efficiënter coderen met utility classes.</p>
         </header>
 
         <div class="mt-8 mb-8 h-1 w-16 rounded-full bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100"></div>
 
         <article class="space-y-8 text-[15px] sm:text-base leading-relaxed text-white/80">
 
-          <section>
+          <section class="space-y-2">
             <h3 class="text-lg sm:text-xl font-semibold text-white">Doelen</h3>
             <p>
               Het doel van deze week was om dieper in te gaan op zowel <strong>design</strong> als
@@ -131,18 +127,105 @@ to-[#1c1a12]">
             </p>
           </section>
 
-          <section>
+          <section class="space-y-2">
             <h3 class="text-lg sm:text-xl font-semibold text-white">Wat heb ik gedaan?</h3>
             <ul class="space-y-2">
-              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Les gevolgd over designprincipes zoals hiërarchie, witruimte en typografie.</span></li>
-              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Interfaces geanalyseerd op rust en drukte.</span></li>
-              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Les gevolgd over het installeren en gebruiken van Tailwind CSS.</span></li>
-              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Tailwind geïnstalleerd en getest in mijn project.</span></li>
-              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Kleine verbeteringen doorgevoerd in bestaande pagina’s.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60 flex-shrink-0"></span><span>Les gevolgd over designprincipes zoals hiërarchie, witruimte en typografie.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60 flex-shrink-0"></span><span>Interfaces geanalyseerd op rust en drukte.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60 flex-shrink-0"></span><span>Les gevolgd over het installeren en gebruiken van Tailwind CSS.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60 flex-shrink-0"></span><span>Tailwind geïnstalleerd en getest in mijn project.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60 flex-shrink-0"></span><span>Kleine verbeteringen doorgevoerd in bestaande pagina’s.</span></li>
             </ul>
           </section>
 
-          <section>
+          <!-- ✅ Foto sectie (zelfde als Week 3/4/5) -->
+          <section class="space-y-4">
+            <h3 class="text-lg sm:text-xl font-semibold text-white">Screens &amp; iteraties</h3>
+            <div class="mt-1 h-1 w-16 rounded-full bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100"></div>
+
+            <p class="text-white/70">
+              Hieronder zie je enkele schermen en varianten waarmee ik deze week werkte.
+              Hover over een scherm om het groter te bekijken.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+              <!-- 1 -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Homescreen</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img src="Fotos/week 6/Homescreen.png" alt="Homescreen"
+                       class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_30px_120px_rgba(0,0,0,0.6)] cursor-zoom-in" />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img src="Fotos/week 6/Homescreen.png" alt=""
+                     class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh] -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition duration-300 z-50" />
+              </figure>
+
+              <!-- 2 -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Actief</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img src="Fotos/week 6/Actief.png" alt="Actief scherm"
+                       class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_30px_120px_rgba(0,0,0,0.6)] cursor-zoom-in" />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img src="Fotos/week 6/Actief.png" alt=""
+                     class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh] -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition duration-300 z-50" />
+              </figure>
+
+              <!-- 3 -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Archief</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img src="Fotos/week 6/Archief.png" alt="Archief scherm"
+                       class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_30px_120px_rgba(0,0,0,0.6)] cursor-zoom-in" />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img src="Fotos/week 6/Archief.png" alt=""
+                     class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh] -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition duration-300 z-50" />
+              </figure>
+
+              <!-- 4 -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Perron scherm</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img src="Fotos/week 6/Perron scherm.png" alt="Perron scherm"
+                       class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_30px_120px_rgba(0,0,0,0.6)] cursor-zoom-in" />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img src="Fotos/week 6/Perron scherm.png" alt=""
+                     class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh] -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition duration-300 z-50" />
+              </figure>
+
+              <!-- 5 -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Perronscherm 2</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img src="Fotos/week 6/Perronscherm 2.png" alt="Perronscherm 2"
+                       class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_30px_120px_rgba(0,0,0,0.6)] cursor-zoom-in" />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img src="Fotos/week 6/Perronscherm 2.png" alt=""
+                     class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh] -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition duration-300 z-50" />
+              </figure>
+
+              <!-- 6 -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Wagonscherm 3</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img src="Fotos/week 6/Wagonscherm 3.png" alt="Wagonscherm 3"
+                       class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_30px_120px_rgba(0,0,0,0.6)] cursor-zoom-in" />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img src="Fotos/week 6/Wagonscherm 3.png" alt=""
+                     class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh] -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition duration-300 z-50" />
+              </figure>
+
+            </div>
+          </section>
+
+          <section class="space-y-2">
             <h3 class="text-lg sm:text-xl font-semibold text-white">Redenen voor mijn keuzes</h3>
             <p>
               Door design en code samen te bekijken, werk ik efficiënter.
@@ -151,7 +234,7 @@ to-[#1c1a12]">
             </p>
           </section>
 
-          <section>
+          <section class="space-y-2">
             <h3 class="text-lg sm:text-xl font-semibold text-white">Lessen &amp; Next steps</h3>
             <p>
               Een goede designvoorbereiding maakt coderen overzichtelijker.
@@ -172,10 +255,10 @@ to-[#1c1a12]">
   <footer class="mt-14 border-t border-white/10">
     <div class="mx-auto max-w-6xl px-4 py-10 text-center text-sm text-white/60">
       © Ibtisam Bellaali — Groep 1GDM1 • Lost in Tra(i)nslation —
-<a href="https://github.com/USERNAME/REPO"
-   class="text-emerald-300 hover:text-emerald-200 underline-offset-4 hover:underline transition">
-  GitHub
-</a>
+      <a href="https://github.com/ibti-web22/Ibtisam.Bellaali-Lost-in-Tra-i-nslation"
+         class="text-emerald-300 hover:text-emerald-200 underline-offset-4 hover:underline transition">
+        GitHub
+      </a>
     </div>
   </footer>
 

@@ -14,11 +14,7 @@
   <link rel="stylesheet" href="dist/output.css">
 </head>
 
-<body class="min-h-screen text-black
-bg-gradient-to-b
-from-[#1c1a12]
-via-[#2a2516]
-to-[#1c1a12]">
+<body class="min-h-screen text-black bg-gradient-to-b from-[#1c1a12] via-[#2a2516] to-[#1c1a12]">
 
   <!-- Background glow blobs -->
   <div class="pointer-events-none fixed inset-0 -z-10">
@@ -33,7 +29,6 @@ to-[#1c1a12]">
 
       <!-- Home / Logo -->
       <a href="index.html" class="group inline-flex items-center gap-3">
-        <!-- diamant = zelfde gradient als 'Bekijk weken' -->
         <span
           class="inline-flex h-10 w-10 items-center justify-center rounded-2xl
                  bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100
@@ -53,7 +48,7 @@ to-[#1c1a12]">
         </div>
       </a>
 
-      <!-- Terug naar Home = zelfde gradient als buttons -->
+      <!-- Terug naar Home -->
       <a href="index.html"
          class="rounded-full px-5 py-2 text-sm font-semibold text-black
                 bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100
@@ -85,7 +80,6 @@ to-[#1c1a12]">
               </a>
             </li>
 
-            <!-- Active = Week 1 (emerald/amber style) -->
             <li>
               <a href="Week1.html"
                  class="block rounded-2xl px-3 py-2 font-semibold text-black
@@ -115,7 +109,7 @@ to-[#1c1a12]">
         <header class="text-center">
           <p class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1 text-xs text-white/70">
             <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-            Week 1 • Reflectie & Beslissingen
+            Week 1 • Ibtisam Bellaali — Groep 1GDM1
           </p>
 
           <h2 class="mt-4 text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
@@ -128,7 +122,6 @@ to-[#1c1a12]">
           <p class="mt-2 text-sm text-white/60">Proces, doelen, keuzes en next steps.</p>
         </header>
 
-        <!-- Accent line -->
         <div class="mt-8 mb-8 h-1 w-16 rounded-full bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100"></div>
 
         <article class="space-y-8 text-[15px] sm:text-base leading-relaxed text-white/80">
@@ -170,6 +163,84 @@ to-[#1c1a12]">
             </ul>
           </section>
 
+          <!-- FOTO'S (fixed: group-hover i.p.v. peer-hover + clean layout) -->
+          <section class="space-y-4">
+            <h3 class="text-lg sm:text-xl font-semibold text-white">Eerste schetsen</h3>
+            <div class="mt-1 h-1 w-16 rounded-full bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100"></div>
+
+            <p class="text-white/70">
+              Hieronder zie je mijn eerste low-fi schetsen. Hover over een schets om hem groot te bekijken.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+
+              <!-- Schets 1 -->
+              <div class="group relative flex justify-center">
+                <img
+                  src="Fotos/week 1/schets-week1-1.png"
+                  alt="Eerste conceptschets"
+                  class="w-full max-w-sm rounded-xl bg-white shadow-2xl
+                         rotate-[-1.5deg]
+                         transition-all duration-500
+                         group-hover:rotate-0 group-hover:scale-105
+                         group-hover:shadow-[0_30px_120px_rgba(0,0,0,0.6)]
+                         cursor-zoom-in"
+                />
+
+                <p class="absolute -bottom-6 text-xs text-white/50 opacity-0 group-hover:opacity-100 transition">
+                  Hover = focus mode
+                </p>
+
+                <!-- overlay -->
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+
+                <!-- fullscreen -->
+                <img
+                  src="Fotos/week 1/schets-week1-1.png"
+                  alt=""
+                  class="pointer-events-none fixed left-1/2 top-1/2 max-w-4xl max-h-[85vh]
+                         -translate-x-1/2 -translate-y-1/2
+                         rounded-xl shadow-2xl
+                         opacity-0 scale-95
+                         group-hover:opacity-100 group-hover:scale-100
+                         transition duration-300 z-50"
+                />
+              </div>
+
+              <!-- Schets 2 -->
+              <div class="group relative flex justify-center">
+                <img
+                  src="Fotos/week 1/schets-week1-2.png"
+                  alt="Alternatieve schets"
+                  class="w-full max-w-sm rounded-xl bg-white shadow-2xl
+                         rotate-[1.5deg]
+                         transition-all duration-500
+                         group-hover:rotate-0 group-hover:scale-105
+                         group-hover:shadow-[0_30px_120px_rgba(0,0,0,0.6)]
+                         cursor-zoom-in"
+                />
+
+                <p class="absolute -bottom-6 text-xs text-white/50 opacity-0 group-hover:opacity-100 transition">
+                  Hover = focus mode
+                </p>
+
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+
+                <img
+                  src="Fotos/week 1/schets-week1-2.png"
+                  alt=""
+                  class="pointer-events-none fixed left-1/2 top-1/2 max-w-4xl max-h-[85vh]
+                         -translate-x-1/2 -translate-y-1/2
+                         rounded-xl shadow-2xl
+                         opacity-0 scale-95
+                         group-hover:opacity-100 group-hover:scale-100
+                         transition duration-300 z-50"
+                />
+              </div>
+
+            </div>
+          </section>
+
           <section class="space-y-2">
             <h3 class="text-lg sm:text-xl font-semibold text-white">Redenen voor mijn keuzes</h3>
             <p>
@@ -201,15 +272,14 @@ to-[#1c1a12]">
   <footer class="mt-14 border-t border-white/10">
     <div class="mx-auto max-w-6xl px-4 py-10 text-center text-sm text-white/60">
       © Ibtisam Bellaali — Groep 1GDM1 • Lost in Tra(i)nslation —
-<a href="https://github.com/USERNAME/REPO"
-   class="text-emerald-300 hover:text-emerald-200 underline-offset-4 hover:underline transition">
-  GitHub
-</a>
+      <a href="https://github.com/ibti-web22/Ibtisam.Bellaali-Lost-in-Tra-i-nslation"
+         class="text-emerald-300 hover:text-emerald-200 underline-offset-4 hover:underline transition">
+        GitHub
+      </a>
     </div>
   </footer>
 
 </body>
 </html>
-
 
 

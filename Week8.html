@@ -12,6 +12,44 @@
 
   <!-- Tailwind -->
   <link rel="stylesheet" href="dist/output.css">
+
+  <!-- Extra examen styling: vallende studietools -->
+  <style>
+    .study-layer{
+      position: fixed;
+      inset: 0;
+      z-index: -9; /* achter alles, boven gradient */
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .study-item{
+      position: absolute;
+      top: -15%;
+      opacity: .45;
+      filter: drop-shadow(0 18px 25px rgba(0,0,0,.35));
+      animation: fallStudy var(--dur) linear infinite, swayStudy var(--sway) ease-in-out infinite;
+      transform: translate3d(0,0,0) rotate(var(--rot));
+      font-size: var(--size);
+      line-height: 1;
+      user-select: none;
+    }
+
+    @keyframes fallStudy{
+      0%   { transform: translate3d(0,-120px,0) rotate(var(--rot)); opacity: 0; }
+      10%  { opacity: .45; }
+      100% { transform: translate3d(0,120vh,0) rotate(calc(var(--rot) + 120deg)); opacity: 0; }
+    }
+
+    @keyframes swayStudy{
+      0%,100% { margin-left: 0; }
+      50%     { margin-left: var(--drift); }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .study-item{ animation: none; opacity: .18; top: 12%; }
+    }
+  </style>
 </head>
 
 <body class="min-h-screen text-black
@@ -19,6 +57,41 @@ bg-gradient-to-b
 from-[#1c1a12]
 via-[#2a2516]
 to-[#1c1a12]">
+
+  <!-- ✏️📄📝📌 Study layer (Examenperiode vibe) -->
+  <div class="study-layer" aria-hidden="true">
+
+    <span class="study-item"
+          style="left: 8%; --size: 34px; --dur: 14s; --sway: 3.8s; --drift: 36px; --rot: -10deg; animation-delay: -2s;">
+      📝
+    </span>
+
+    <span class="study-item"
+          style="left: 22%; --size: 40px; --dur: 18s; --sway: 4.8s; --drift: -48px; --rot: 18deg; animation-delay: -7s;">
+      ✏️
+    </span>
+
+    <span class="study-item"
+          style="left: 44%; --size: 32px; --dur: 13s; --sway: 3.6s; --drift: 28px; --rot: 10deg; animation-delay: -10s;">
+      📄
+    </span>
+
+    <span class="study-item"
+          style="left: 62%; --size: 42px; --dur: 20s; --sway: 5.2s; --drift: -56px; --rot: -6deg; animation-delay: -4s;">
+      📌
+    </span>
+
+    <span class="study-item"
+          style="left: 78%; --size: 36px; --dur: 16s; --sway: 4.2s; --drift: 40px; --rot: 22deg; animation-delay: -12s;">
+      📝
+    </span>
+
+    <span class="study-item"
+          style="left: 92%; --size: 30px; --dur: 12s; --sway: 3.4s; --drift: -22px; --rot: -14deg; animation-delay: -6s;">
+      📄
+    </span>
+
+  </div>
 
   <!-- Background glow blobs -->
   <div class="pointer-events-none fixed inset-0 -z-10">
@@ -105,7 +178,7 @@ to-[#1c1a12]">
         <header class="text-center">
           <p class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1 text-xs text-white/70">
             <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-            Week 8 • Examenperiode
+            Week 8 • Ibtisam Bellaali — Groep 1GDM1
           </p>
 
           <h2 class="mt-4 text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
@@ -171,10 +244,10 @@ to-[#1c1a12]">
   <footer class="mt-14 border-t border-white/10">
     <div class="mx-auto max-w-6xl px-4 py-10 text-center text-sm text-white/60">
       © Ibtisam Bellaali — Groep 1GDM1 • Lost in Tra(i)nslation —
-<a href="https://github.com/USERNAME/REPO"
-   class="text-emerald-300 hover:text-emerald-200 underline-offset-4 hover:underline transition">
-  GitHub
-</a>
+      <a href="https://github.com/ibti-web22/Ibtisam.Bellaali-Lost-in-Tra-i-nslation"
+         class="text-emerald-300 hover:text-emerald-200 underline-offset-4 hover:underline transition">
+        GitHub
+      </a>
     </div>
   </footer>
 

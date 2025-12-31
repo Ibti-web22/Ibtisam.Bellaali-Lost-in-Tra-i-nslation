@@ -12,6 +12,44 @@
 
   <!-- Tailwind -->
   <link rel="stylesheet" href="dist/output.css">
+
+  <!-- Extra herfst styling -->
+  <style>
+    /* Subtiele vallende blaadjes */
+    .leaf-layer{
+      position: fixed;
+      inset: 0;
+      z-index: -9; /* achter alles, maar boven de gradient */
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .leaf{
+      position: absolute;
+      top: -15%;
+      opacity: .55;
+      filter: drop-shadow(0 18px 25px rgba(0,0,0,.35));
+      animation: fall var(--dur) linear infinite, sway var(--sway) ease-in-out infinite;
+      transform: translate3d(0,0,0) rotate(var(--rot));
+    }
+    .leaf svg{
+      width: var(--size);
+      height: auto;
+      display: block;
+    }
+    @keyframes fall{
+      0%   { transform: translate3d(0,-120px,0) rotate(var(--rot)); }
+      100% { transform: translate3d(0,120vh,0) rotate(calc(var(--rot) + 260deg)); }
+    }
+    @keyframes sway{
+      0%,100% { margin-left: 0; }
+      50%     { margin-left: var(--drift); }
+    }
+
+    /* Minder animatie als user dat wil */
+    @media (prefers-reduced-motion: reduce){
+      .leaf{ animation: none; opacity: .25; top: 10%; }
+    }
+  </style>
 </head>
 
 <body class="min-h-screen text-black
@@ -19,6 +57,59 @@ bg-gradient-to-b
 from-[#1c1a12]
 via-[#2a2516]
 to-[#1c1a12]">
+
+  <!-- 🍂 Leaf layer (Herfstvakantie vibe) -->
+  <div class="leaf-layer" aria-hidden="true">
+    <!-- Leaf 1 -->
+    <div class="leaf"
+         style="left: 8%; --size: 34px; --dur: 13s; --sway: 3.2s; --drift: 36px; --rot: 15deg; animation-delay: -2s;">
+      <svg viewBox="0 0 64 64" fill="none">
+        <path d="M50 10c-12 2-22 9-28 18C15 38 14 49 18 54c6 7 21 3 30-7 7-8 10-18 8-30-2-4-4-6-6-7Z"
+              fill="rgba(251,191,36,.75)"/>
+        <path d="M22 31c10 5 18 12 25 22" stroke="rgba(255,255,255,.35)" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <!-- Leaf 2 -->
+    <div class="leaf"
+         style="left: 26%; --size: 44px; --dur: 16s; --sway: 4.4s; --drift: -44px; --rot: -20deg; animation-delay: -6s;">
+      <svg viewBox="0 0 64 64" fill="none">
+        <path d="M54 16C40 10 22 14 14 28c-7 12-5 26 5 32 10 6 26 0 35-12 7-9 8-20 0-32Z"
+              fill="rgba(52,211,153,.55)"/>
+        <path d="M18 34c12 2 22 8 30 18" stroke="rgba(255,255,255,.32)" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <!-- Leaf 3 -->
+    <div class="leaf"
+         style="left: 52%; --size: 30px; --dur: 12s; --sway: 3.6s; --drift: 28px; --rot: 35deg; animation-delay: -9s;">
+      <svg viewBox="0 0 64 64" fill="none">
+        <path d="M48 12c-7 1-18 6-26 15C13 36 10 48 18 54c9 7 26-1 34-12 6-8 8-18 6-26-2-2-5-4-10-4Z"
+              fill="rgba(245,158,11,.65)"/>
+        <path d="M20 33c9 6 16 13 21 22" stroke="rgba(255,255,255,.30)" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <!-- Leaf 4 -->
+    <div class="leaf"
+         style="left: 74%; --size: 48px; --dur: 18s; --sway: 5s; --drift: -52px; --rot: 5deg; animation-delay: -3s;">
+      <svg viewBox="0 0 64 64" fill="none">
+        <path d="M50 14c-10-2-24 2-32 13-8 11-8 26 2 33 10 7 27 1 36-13 6-10 6-21-6-33Z"
+              fill="rgba(167,243,208,.45)"/>
+        <path d="M18 35c13 1 23 7 32 19" stroke="rgba(255,255,255,.28)" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <!-- Leaf 5 -->
+    <div class="leaf"
+         style="left: 90%; --size: 32px; --dur: 14s; --sway: 3.8s; --drift: 32px; --rot: -10deg; animation-delay: -11s;">
+      <svg viewBox="0 0 64 64" fill="none">
+        <path d="M52 12C38 14 26 22 19 33c-7 11-7 20-2 26 8 8 23 4 33-6 8-8 12-21 8-34-2-5-4-7-6-7Z"
+              fill="rgba(253,230,138,.55)"/>
+        <path d="M20 36c11 4 20 11 27 20" stroke="rgba(255,255,255,.30)" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
 
   <!-- Background glow blobs -->
   <div class="pointer-events-none fixed inset-0 -z-10">
@@ -105,7 +196,7 @@ to-[#1c1a12]">
         <header class="text-center">
           <p class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1 text-xs text-white/70">
             <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-            Week 7 • Herfstvakantie
+            Week 7 • Ibtisam Bellaali — Groep 1GDM1
           </p>
 
           <h2 class="mt-4 text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
@@ -170,10 +261,10 @@ to-[#1c1a12]">
   <footer class="mt-14 border-t border-white/10">
     <div class="mx-auto max-w-6xl px-4 py-10 text-center text-sm text-white/60">
       © Ibtisam Bellaali — Groep 1GDM1 • Lost in Tra(i)nslation —
-<a href="https://github.com/USERNAME/REPO"
-   class="text-emerald-300 hover:text-emerald-200 underline-offset-4 hover:underline transition">
-  GitHub
-</a>
+      <a href="https://github.com/ibti-web22/Ibtisam.Bellaali-Lost-in-Tra-i-nslation"
+         class="text-emerald-300 hover:text-emerald-200 underline-offset-4 hover:underline transition">
+        GitHub
+      </a>
     </div>
   </footer>
 
