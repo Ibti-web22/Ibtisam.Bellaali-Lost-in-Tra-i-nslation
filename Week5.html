@@ -14,11 +14,7 @@
   <link rel="stylesheet" href="dist/output.css">
 </head>
 
-<body class="min-h-screen text-black
-bg-gradient-to-b
-from-[#1c1a12]
-via-[#2a2516]
-to-[#1c1a12]">
+<body class="min-h-screen text-black bg-gradient-to-b from-[#1c1a12] via-[#2a2516] to-[#1c1a12]">
 
   <!-- Background glow blobs -->
   <div class="pointer-events-none fixed inset-0 -z-10">
@@ -47,7 +43,7 @@ to-[#1c1a12]">
           <h1 class="text-sm sm:text-base font-bold tracking-tight text-white">
             Projectdocs — <span class="text-white/80">Lost in Tra(i)nslation</span>
           </h1>
-          <p class="text-xs text-white/60">Week 5 • Reflectie • Beslissingen</p>
+          <p class="text-xs text-white/60">Week 5 • Van Figma naar HTML &amp; CSS</p>
         </div>
       </a>
 
@@ -111,53 +107,255 @@ to-[#1c1a12]">
           <h2 class="mt-4 text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
             Week 5:
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100">
-              Reflectie &amp; Beslissingen
+              Van Figma naar HTML &amp; CSS
             </span>
           </h2>
 
-          <p class="mt-2 text-sm text-white/60">Van Figma naar HTML &amp; CSS.</p>
+          <p class="mt-2 text-sm text-white/60">Structuur bouwen, styling toepassen, online zetten.</p>
         </header>
 
         <div class="mt-8 mb-8 h-1 w-16 rounded-full bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100"></div>
 
         <article class="space-y-8 text-[15px] sm:text-base leading-relaxed text-white/80">
 
-          <section>
+          <section class="space-y-2">
             <h3 class="text-lg sm:text-xl font-semibold text-white">Doelen</h3>
             <p>
               Het doel van deze week was om mijn ontwerp uit Figma om te zetten naar HTML en CSS.
-              Ik wilde de basisstructuur van de website opbouwen, werken met containers
-              en mijn gekozen kleuren en lettertypes toepassen in de code.
-              Daarnaast wilde ik leren hoe ik mijn project online kan zetten via GitHub en Netlify.
+              Ik wilde de basisstructuur van de website opbouwen, werken met containers en mijn gekozen
+              kleuren en lettertypes toepassen in de code. Daarnaast wilde ik leren hoe ik mijn project
+              online kan zetten via GitHub en Netlify.
             </p>
           </section>
 
-          <section>
+          <section class="space-y-2">
             <h3 class="text-lg sm:text-xl font-semibold text-white">Wat heb ik gedaan?</h3>
             <ul class="space-y-2">
-              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>De HTML-structuur opgezet met verschillende pagina’s per week.</span></li>
-              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Een navigatiebalk toegevoegd zodat alle weken verbonden zijn.</span></li>
-              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Lettertypes uit Figma geïmporteerd via Google Fonts.</span></li>
-              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Een achtergrondkleur en basisopmaak toegevoegd.</span></li>
-              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60"></span><span>Het project gepubliceerd via GitHub en Netlify.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60 flex-shrink-0"></span><span>De HTML-structuur opgezet met verschillende pagina’s per week.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60 flex-shrink-0"></span><span>Een navigatiebalk toegevoegd zodat alle weken verbonden zijn.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60 flex-shrink-0"></span><span>Lettertypes uit Figma geïmporteerd via Google Fonts.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60 flex-shrink-0"></span><span>Een achtergrondkleur en basisopmaak toegevoegd.</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-white/60 flex-shrink-0"></span><span>Het project gepubliceerd via GitHub en Netlify.</span></li>
             </ul>
           </section>
 
-          <section>
+          <!-- FOTOSECTIE (zoals Week 3) -->
+          <section class="space-y-4">
+            <h3 class="text-lg sm:text-xl font-semibold text-white">Screenshots week 5</h3>
+            <div class="mt-1 h-1 w-16 rounded-full bg-gradient-to-r from-emerald-200 via-amber-200 to-yellow-100"></div>
+
+            <p class="text-white/70">
+              Hieronder zie je screenshots van mijn werk. Hover over een beeld om het groter te bekijken.
+            </p>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+              <!-- Overzichtsscherm mobile -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Overzichtsscherm (mobile)</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img
+                    src="Fotos/week%205/Overzichtscherm%20mobile.png"
+                    alt="Overzichtsscherm mobile"
+                    class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 cursor-zoom-in"
+                  />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img
+                  src="Fotos/week%205/Overzichtscherm%20mobile.png"
+                  alt=""
+                  class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh]
+                         -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl
+                         opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                         transition duration-300 z-50"
+                />
+              </figure>
+
+              <!-- Perron scherm mobile -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Perronscherm (mobile)</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img
+                    src="Fotos/week%205/Perron%20scherm%20mobile.png"
+                    alt="Perronscherm mobile"
+                    class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 cursor-zoom-in"
+                  />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img
+                  src="Fotos/week%205/Perron%20scherm%20mobile.png"
+                  alt=""
+                  class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh]
+                         -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl
+                         opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                         transition duration-300 z-50"
+                />
+              </figure>
+
+              <!-- Plaats -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Plaats</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img
+                    src="Fotos/week%205/Plaats.png"
+                    alt="Plaats scherm"
+                    class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 cursor-zoom-in"
+                  />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img
+                  src="Fotos/week%205/Plaats.png"
+                  alt=""
+                  class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh]
+                         -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl
+                         opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                         transition duration-300 z-50"
+                />
+              </figure>
+
+              <!-- Wagon scherm mobile 2 -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Wagonscherm (mobile 2)</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img
+                    src="Fotos/week%205/Wagon%20scherm%20mobile%202.png"
+                    alt="Wagonscherm mobile 2"
+                    class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 cursor-zoom-in"
+                  />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img
+                  src="Fotos/week%205/Wagon%20scherm%20mobile%202.png"
+                  alt=""
+                  class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh]
+                         -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl
+                         opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                         transition duration-300 z-50"
+                />
+              </figure>
+
+              <!-- Wagon scherm mobile 3 -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Wagonscherm (mobile 3)</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img
+                    src="Fotos/week%205/Wagon%20scherm%20mobile%203.png"
+                    alt="Wagonscherm mobile 3"
+                    class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 cursor-zoom-in"
+                  />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img
+                  src="Fotos/week%205/Wagon%20scherm%20mobile%203.png"
+                  alt=""
+                  class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh]
+                         -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl
+                         opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                         transition duration-300 z-50"
+                />
+              </figure>
+
+              <!-- Antwerpen -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Antwerpen</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img
+                    src="Fotos/week%205/Antwerpen.png"
+                    alt="Antwerpen scherm"
+                    class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 cursor-zoom-in"
+                  />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img
+                  src="Fotos/week%205/Antwerpen.png"
+                  alt=""
+                  class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh]
+                         -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl
+                         opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                         transition duration-300 z-50"
+                />
+              </figure>
+
+              <!-- Brussel -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Brussel</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img
+                    src="Fotos/week%205/Brussel.png"
+                    alt="Brussel scherm"
+                    class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 cursor-zoom-in"
+                  />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img
+                  src="Fotos/week%205/Brussel.png"
+                  alt=""
+                  class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh]
+                         -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl
+                         opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                         transition duration-300 z-50"
+                />
+              </figure>
+
+              <!-- Eindhoven -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Eindhoven</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img
+                    src="Fotos/week%205/Eindhoven.png"
+                    alt="Eindhoven scherm"
+                    class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 cursor-zoom-in"
+                  />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img
+                  src="Fotos/week%205/Eindhoven.png"
+                  alt=""
+                  class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh]
+                         -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl
+                         opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                         transition duration-300 z-50"
+                />
+              </figure>
+
+              <!-- Leuven -->
+              <figure class="group relative">
+                <figcaption class="mb-2 text-sm font-semibold text-white/90">Leuven</figcaption>
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg">
+                  <img
+                    src="Fotos/week%205/Leuven.png"
+                    alt="Leuven scherm"
+                    class="w-full aspect-[4/3] object-contain bg-white transition-all duration-500 group-hover:scale-105 cursor-zoom-in"
+                  />
+                </div>
+                <div class="pointer-events-none fixed inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition z-40"></div>
+                <img
+                  src="Fotos/week%205/Leuven.png"
+                  alt=""
+                  class="pointer-events-none fixed left-1/2 top-1/2 max-w-5xl max-h-[85vh]
+                         -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl
+                         opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                         transition duration-300 z-50"
+                />
+              </figure>
+
+            </div>
+          </section>
+
+          <section class="space-y-2">
             <h3 class="text-lg sm:text-xl font-semibold text-white">Redenen voor mijn keuzes</h3>
             <p>
-              Ik koos voor een rustig en overzichtelijk ontwerp met voldoende witruimte,
-              in lijn met mijn Figma-ontwerp. De gele accentkleur zorgt voor consistentie
-              tussen design en code.
+              Ik koos voor een rustig en overzichtelijk ontwerp met voldoende witruimte, in lijn met mijn Figma-ontwerp.
+              De gele accentkleur zorgt voor consistentie tussen design en code.
             </p>
           </section>
 
-          <section>
+          <section class="space-y-2">
             <h3 class="text-lg sm:text-xl font-semibold text-white">Lessen &amp; Next steps</h3>
             <p>
               Ik leerde hoe belangrijk een duidelijke HTML-structuur is.
-              Volgende week wil ik experimenteren met lay-out, grid en spacing
-              zodat de website nog professioneler oogt.
+              Volgende week wil ik experimenteren met lay-out, grid en spacing zodat de website nog professioneler oogt.
             </p>
           </section>
 
@@ -173,10 +371,10 @@ to-[#1c1a12]">
   <footer class="mt-14 border-t border-white/10">
     <div class="mx-auto max-w-6xl px-4 py-10 text-center text-sm text-white/60">
       © Ibtisam Bellaali — Groep 1GDM1 • Lost in Tra(i)nslation —
-<a href="https://github.com/ibti-web22/Ibtisam.Bellaali-Lost-in-Tra-i-nslation"
-   class="text-emerald-300 hover:text-emerald-200 underline-offset-4 hover:underline transition">
-  GitHub
-</a>
+      <a href="https://github.com/ibti-web22/Ibtisam.Bellaali-Lost-in-Tra-i-nslation"
+         class="text-emerald-300 hover:text-emerald-200 underline-offset-4 hover:underline transition">
+        GitHub
+      </a>
     </div>
   </footer>
 
